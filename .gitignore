@@ -351,3 +351,11 @@ MigrationBackup/
 
 # venv
 venv/
+
+# large files
+model/models_colab/
+model/models/
+model/transformers/
+
+# DS_Store
+.DS_Store
