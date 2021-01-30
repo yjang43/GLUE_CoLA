@@ -25,7 +25,6 @@ if __name__ == "__main__":
     print("********************************************************************************")
     print("Serialize models/tokenizers downloaded from Google Colab")
     print("********************************************************************************")
-    print(os.path.join(FILE_DIR, 'models_colab/bert-base-cased/'))
     serialize(os.path.join(FILE_DIR, 'models/bert-base-cased.pk'), os.path.join(FILE_DIR, 'models_colab/bert-base-cased/'))
     serialize(os.path.join(FILE_DIR, 'models/distilbert-base-cased.pk'), os.path.join(FILE_DIR, 'models_colab/distilbert-base-cased/'))
     serialize(os.path.join(FILE_DIR, 'models/roberta-base.pk'), os.path.join(FILE_DIR, 'models_colab/roberta-base/'))
