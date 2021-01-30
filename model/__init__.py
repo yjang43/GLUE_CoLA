@@ -1,1 +1,1 @@
-from inference import Model
+from .inference import Model
