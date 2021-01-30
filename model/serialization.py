@@ -16,6 +16,7 @@ def serialize(fn, fp):
     model = AutoModelForSequenceClassification.from_pretrained(fp)
     tokenizer = AutoTokenizer.from_pretrained(fp)
     obj = {'model': model, 'tokenizer': tokenizer}
+    os.mkdir(os.path.join(FILE_DIR, 'models'))
     with open(fn, 'wb') as f:
         pickle.dump(obj, f)
 
