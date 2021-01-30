@@ -16,7 +16,7 @@ class Model:
         """ Model constructor
         """
 
-        default_model = "roberta-base.pk"   # best performance model
+        default_model = "bert-base-cased.pk"   # best performance model
         self.init_model(default_model)
 
     def init_model(self, model_fn):
