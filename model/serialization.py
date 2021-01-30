@@ -7,6 +7,12 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def serialize(fn, fp):
+    """ Model trained from Google Colab is too big, so extract model and tokenizer.
+
+    [Parameters]
+    fn: file name in str
+    fp: file path in str
+    """
     model = AutoModelForSequenceClassification.from_pretrained(fp)
     tokenizer = AutoTokenizer.from_pretrained(fp)
     obj = {'model': model, 'tokenizer': tokenizer}
